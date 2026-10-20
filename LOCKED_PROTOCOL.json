@@ -1,0 +1,67 @@
+{
+  "protocol_version": "1.0",
+  "locked_before_holdout_evaluation": true,
+  "data_sha256": "e1fc6e682edb8a2102d87e182b844fc8cde49e10763c0ef4293e510bbe240f69",
+  "outer_split": "feature-only GroupShuffleSplit(test_size=0.2, random_state=42), exact predictors",
+  "screening_confirmation": "feature-only GroupShuffleSplit(test_size=0.25, random_state=42) inside development",
+  "split_sizes": {
+    "screening": 14112,
+    "prior_v3_confirmation": 4644,
+    "outer_holdout": 4707,
+    "development_for_final_training": 18756
+  },
+  "outer_row_index_sha256": "d0a1074f4f307b19289ffa4290febdab86d94cbb3aa316cab345e5571346319e",
+  "screening_ranking_sha256": {
+    "regression_ranking.csv": "c9c5f1a1607e8ffc97d9d60c62698c8f3210b34b8872e9a515d86e2bc5df498b",
+    "classification_ranking.csv": "5f6e2ebb88f55f55a3db59a61bebe1a4770f83b2063f6f183071e8ea4e6e9c0c"
+  },
+  "selection_precommitted": {
+    "regression_primary": {
+      "name": "log_hgb_A5",
+      "method": "hgb_log_reference",
+      "features": "A5",
+      "primary_metric": "mae"
+    },
+    "regression_secondary": {
+      "name": "log_hgb_A4",
+      "method": "hgb_log_reference",
+      "features": "A4"
+    },
+    "stacking_secondary": {
+      "name": "huber_stack",
+      "method": "huber",
+      "bases": [
+        "ridge",
+        "extra_trees",
+        "hgb_log_reference"
+      ],
+      "features": "A4"
+    },
+    "classification_primary": {
+      "name": "lightgbm_A4",
+      "method": "lightgbm",
+      "features": "A4",
+      "primary_metric": "macro_f1"
+    },
+    "classification_safety_comparator": {
+      "name": "rf_balanced_A4",
+      "method": "rf_balanced",
+      "features": "A4",
+      "secondary_metric": "hazardous_recall"
+    },
+    "classification_derived_comparator": {
+      "name": "hgb_A5_to_class",
+      "source": "regression_primary"
+    }
+  },
+  "analysis_contract": {
+    "final_training": "all development rows (screening + previously inspected v3 confirmation); no final tuning",
+    "holdout": "only one scheduled scoring pass of all prespecified fixed candidates, no ranking-based reselection",
+    "regression": "MAE primary, RMSE/R2 secondary; paired exact-input-pattern bootstrap CI descriptive",
+    "classification": "macro-F1 primary, hazardous recall/balanced accuracy/ordinal error secondary; paired exact-input-pattern bootstrap CI descriptive",
+    "calibration": "descriptive, no post-hoc threshold or calibration tuning on holdout",
+    "historical_data": "old historical test and v3 confirmation already inspected; new outer holdout is NOT an independent external dataset",
+    "selection_after_holdout": "PROHIBITED; rerunning skips prior holdout scoring if receipt exists"
+  },
+  "screening_source": "verified v4 screening-only grouped OOF and rankings; feature and model choices frozen before target access"
+}

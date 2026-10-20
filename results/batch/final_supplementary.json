@@ -1,0 +1,18 @@
+{
+  "ece_10_bin_lightgbm_A4": 0.01992427067554774,
+  "multiclass_brier_lightgbm_A4": 0.39177768619231246,
+  "outer_n": 4707,
+  "outer_pattern_groups": 2079,
+  "class_counts": {
+    "Good": 1998,
+    "Moderate": 1880,
+    "Unhealthy for Sensitive Groups": 330,
+    "Unhealthy": 420,
+    "Very Unhealthy": 50,
+    "Hazardous": 29
+  },
+  "data_sha256": "e1fc6e682edb8a2102d87e182b844fc8cde49e10763c0ef4293e510bbe240f69",
+  "training_size_all_development": 18756,
+  "warning": "Prior historical test and v3 confirmation were already examined; not external validation.",
+  "rule": "No model changes, tuning, or ranking after holdout scores."
+}

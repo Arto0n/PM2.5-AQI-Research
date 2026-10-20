@@ -1,0 +1,34 @@
+{
+  "python": "3.13.5",
+  "pandas": "2.2.3",
+  "numpy": "2.3.5",
+  "dataset_SHA256": "e1fc6e682edb8a2102d87e182b844fc8cde49e10763c0ef4293e510bbe240f69",
+  "data_records": 23463,
+  "screening_records": 14112,
+  "sealed_confirmation_records": 4644,
+  "sealed_outer_records": 4707,
+  "grouped_cv_folds": 3,
+  "candidate_regression": 10,
+  "candidate_classification": 12,
+  "elapsed_seconds": 465.81,
+  "diagnostics": {
+    "ece_10bin": 0.16059888670162634,
+    "multiclass_brier": 0.4571536888134442,
+    "ordinal_error_ge2": 0.0481859410430839,
+    "hazardous_support": 121,
+    "within_5_AQI_of_boundary_n": 2797,
+    "within_5_AQI_of_boundary_accuracy": 0.518055058991777,
+    "away_from_boundaries_n": 11315,
+    "away_from_boundaries_accuracy": 0.7224038886433938,
+    "log_hgb_screening_mae": 17.328744103099012,
+    "log_hgb_screening_residual_abs_q90": 35.323070478075415
+  },
+  "regression_best_screening": {
+    "name": "log_hgb_A5",
+    "mae": 17.21731020026574
+  },
+  "classification_best_screening": {
+    "name": "lightgbm_A4",
+    "macro_f1": 0.5218770406322845
+  }
+}

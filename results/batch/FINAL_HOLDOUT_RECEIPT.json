@@ -1,0 +1,28 @@
+{
+  "status": "evaluated_once",
+  "protocol_sha256": "3a44256ae396182495f61f8c293572456b465b92d2807adf045af3d85977f556",
+  "holdout_count": 4707,
+  "model_specs_prespecified": [
+    "log_hgb_A5",
+    "log_hgb_A4",
+    "huber_stack",
+    "lightgbm_A4",
+    "rf_balanced_A4",
+    "hgb_A5_to_class"
+  ],
+  "result_sha256": {
+    "final_regression_fixed.csv": "2e931561faafc77974c9778c5400f540ee8823d6bec6753418f4c54c9656a9c6",
+    "final_classification_fixed.csv": "fba690fbc251a8e2a0183fe702222fd5587ca3ca30950028297a92aa617ec89e",
+    "final_paired_pattern_CIs.csv": "1939854ccf5128cfcbffd0a578c0fc81aeda8802073aada57917689ae1bf191e",
+    "final_six_class_metrics.csv": "d1de7a0ce7ad373b699f42a7653d44c5ad3c5834bd9bac9ecc7e0f283325781c",
+    "final_calibration_bins.csv": "1637905a4b50395f385a025eeab3b3547e2a55d2d19457dc452e65b57fb3b7ad",
+    "final_boundary_errors.csv": "2ad803969865e378296d68e74b5c777c6d5e33a7173001dd2741292426a623ba",
+    "final_absolute_pattern_CIs.csv": "ecfdd4b228e14f402a26168c874edce7b88e3073c1481b66d93fe56bfc13618b",
+    "final_supplementary.json": "e1edef69e1155e0060446b844011b83aec822203433284fe975f442c7f0e2868",
+    "final_confusion_lightgbm_A4.csv": "8ca5cebe2e4e53a770be06b42a8c848b2966d7dcf8d301465a64627a060fc3ef",
+    "final_confusion_rf_balanced_A4.csv": "9440ddb4b43f56f288149568c0deb0f67003a1b15cee6df9d45b1c09f4f2a679",
+    "final_confusion_hgb_A5_to_class.csv": "0b9b7444fe2a2487ec6b9e9b9b6f1dec2fb7199dafbe02cb1f0935320d3ef08c"
+  },
+  "disclosure": "Data previously used for historical test/model exploration; not independent external validation",
+  "post_holdout_tuning": "prohibited"
+}

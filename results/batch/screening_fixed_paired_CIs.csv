@@ -1,0 +1,5 @@
+task,a,b,metric,point_estimate,ci_low,ci_high
+regression,log_hgb_A5,log_hgb_A4,MAE(a)-MAE(b),-0.1114339028332735,-0.20851320826517727,-0.005427359170430903
+classification,lightgbm_A4,rf_balanced_A4,Macro-F1(a)-Macro-F1(b),0.0056546039321969666,-0.01920307080279044,0.02844738422775889
+classification,lightgbm_A4,hgb_A5_to_class,Macro-F1(a)-Macro-F1(b),0.034466526812418186,0.010512069591198358,0.06056946820669596
+safety,lightgbm_A4,rf_balanced_A4,Hazardous recall(a)-recall(b),-0.25619834710743805,-0.3957644628099174,-0.1048907520325203

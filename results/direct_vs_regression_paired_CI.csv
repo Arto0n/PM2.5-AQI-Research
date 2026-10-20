@@ -1,0 +1,2 @@
+metric,estimate,CI_low,CI_high,samples
+macro_F1_direct_RF_A4_minus_fixed_log_HGB_to_class,0.039708437288296206,0.012057624011871867,0.06433693338437718,350

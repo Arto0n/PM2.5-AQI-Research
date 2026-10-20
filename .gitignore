@@ -1,0 +1,29 @@
+# Environment / editor / Python state
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.egg-info/
+build/
+dist/
+# Raw Kaggle data: distribution rights must be verified separately
+global_air_pollution_dataset.csv
+data/*.csv
+data/*.zip
+# Experiments must never silently overwrite the frozen audited artifact tables
+artifacts/
+*.joblib
+*.pkl
+# Temporary files, local credentials, and notebook exports
+.env
+.env.*
+.kaggle/
+kaggle.json
+*.log
+notebooks/.ipynb_checkpoints/

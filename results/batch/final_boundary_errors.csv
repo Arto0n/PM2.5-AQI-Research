@@ -1,0 +1,7 @@
+model,zone,n,accuracy,ordinal_ge2_rate
+lightgbm_A4,within_5_AQI_of_boundary,935,0.5240641711229946,0.0481283422459893
+lightgbm_A4,outside_boundary_band,3772,0.7484093319194062,0.03525980911983033
+rf_balanced_A4,within_5_AQI_of_boundary,935,0.4983957219251337,0.038502673796791446
+rf_balanced_A4,outside_boundary_band,3772,0.7364793213149523,0.03340402969247084
+hgb_A5_to_class,within_5_AQI_of_boundary,935,0.4844919786096257,0.029946524064171122
+hgb_A5_to_class,outside_boundary_band,3772,0.7441675503711559,0.02518557794273595

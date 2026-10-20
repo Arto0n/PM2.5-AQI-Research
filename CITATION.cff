@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this research software, please cite this repository."
+type: software
+title: "PM2.5 AQI Estimation and Severity Classification: Reproducible Research Code"
+authors:
+  - family-names: Saremi
+    given-names: Artin
+version: "1.0.0"
+keywords:
+  - PM2.5 AQI
+  - machine learning
+  - grouped cross-validation
+  - scientific reproducibility
+repository-code: https://github.com/Arto0n/PM2.5-AQI-Research

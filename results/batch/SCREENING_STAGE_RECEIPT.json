@@ -1,0 +1,11 @@
+{
+  "sha256": {
+    "stacking_development_nested_folds.csv": "fb47266732ada3f37ad3fd4578fdde074bc801d462bf591b257840149dd0e00b",
+    "stacking_development_summary.csv": "6e3ede30597b05582c481587b103a5f6ead07c6b04b0b2588b52364d0e21d87f",
+    "screening_fixed_class_comparison.csv": "6298aefe5fc5e91a58af6262f9be0e894203838e6b9a26496adf501005a22145",
+    "screening_fixed_paired_CIs.csv": "08f3929d05ca07836221ed814b852a2d4d0c69058fbf57bb7ef445af3ae1d1f9",
+    "country_transfer_fixed_models.csv": "c416267e455b7acc4014c8b9333c9077144a2060a404e0d6e3b048bdce5d5691",
+    "seed_robustness_fixed_models.csv": "0746a55b369e15bd90fba654ea4c0703236659c89cb20327cd298de2ff5b8f5f"
+  },
+  "holdout_labels_used": false
+}

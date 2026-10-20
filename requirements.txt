@@ -1,0 +1,17 @@
+# Python 3.11 recommended; keep a bounded, portable installation.
+# This file specifies compatible ranges, NOT an immutable platform lock.
+numpy>=1.24,<3
+pandas>=2.0,<3
+scipy>=1.11,<2
+scikit-learn>=1.6,<1.9
+matplotlib>=3.7,<4
+xgboost>=2.1,<4
+lightgbm>=4.2,<5
+catboost>=1.2,<2
+notebook>=7,<8
+ipykernel>=6,<8
+ipython>=8,<10
+nbformat>=5.9,<6
+pytest>=8,<10
+threadpoolctl>=3.1,<5
+tabulate>=0.9,<1
