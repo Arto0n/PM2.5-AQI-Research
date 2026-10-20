@@ -8,7 +8,7 @@
                         ".github/workflows/tests.yml":  "effb972b0dcb6dba10eefa3750247d0e8964b438484b2fb82abcb00ecb394098",
                         ".gitignore":  "841ff8cf2fb3106de983852b85827a7c7f91f48d4d4ff57516643522031b2707",
                         ".python-version":  "49a506dd32096b010d75205acf3430c9ae6c40351888129499e5a5e487126c93",
-                        "CITATION.cff":  "58a1fb15c4f94629a8d4a99aba5980b0a14267d017d7ae99ed50a8d79e1feb97",
+                        "CITATION.cff":  "23b57d2b56083e749adf34d95aa3cb7849f9a095df101ec5a838ef39c02e9120",
                         "LOCKED_PROTOCOL.json":  "3a44256ae396182495f61f8c293572456b465b92d2807adf045af3d85977f556",
                         "PM2.5_Research.ipynb":  "94d7ba7fd1edd886dd109569be72659a17e7c1df8d26fa3e8b23a87f058bb920",
                         "README.md":  "f9e4cf363325b7a2917ab91a856ec305fdee31b50401ae1ab4e18879764f0ce2",
@@ -102,6 +102,7 @@
                         "tests/test_classification.py":  "95c8e603976da22a8ee1d5c8ad8bf7a5b2d78e7274707fca9666450b14dfb73a",
                         "tests/test_leakage.py":  "4cc375e589f660655899a51334a91bc6bd691c8e6dd1bc4becfeb50403de5d27",
                         "tests/test_release_contract.py":  "7b03594246d78eb6ef3ebde43c5cdca153a47fbc00141f80f22d0e647badd4d6",
-                        "tests/test_research_extension.py":  "cd2cd8a690249dadce55edd2117252fa88b0a595e8df0bcc9b96e335023759da"
+                        "tests/test_research_extension.py":  "cd2cd8a690249dadce55edd2117252fa88b0a595e8df0bcc9b96e335023759da",
+                        "LICENSE":  "af178545f1fb14b1cfa10c63906a84a200cc26a486b541a60cfbd7da0505e305"
                     }
 }

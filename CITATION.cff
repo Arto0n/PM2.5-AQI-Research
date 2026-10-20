@@ -12,3 +12,4 @@ keywords:
   - grouped cross-validation
   - scientific reproducibility
 repository-code: https://github.com/Arto0n/PM2.5-AQI-Research
+license: MIT
